@@ -6,7 +6,7 @@
 | 2  | Hafiz Ramadhan   | 5027241096  |
 
 ## Soal 1
-![Gambar1](img/img_1.png)
+![Gambar1](images/img_1.png)
 
 ## Soal 14
 ```
