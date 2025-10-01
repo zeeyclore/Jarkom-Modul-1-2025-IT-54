@@ -69,11 +69,11 @@ Pada details di salah satu packet, tertera jika usage menggunakan USB Keyboard.
 ```
 Ketik `usb.transfer_type == 0x01` pada filter, lalu simpan sebagai `plain text` melalui `File`.
 <img width="1087" height="168" alt="image" src="https://github.com/user-attachments/assets/59435fff-f487-4733-b883-f7182cb717e2" />
-> awok.txt
+> [awok.txt](https://github.com/zeeyclore/Jarkom-Modul-1-2025-K54/blob/main/awok.txt)
 
 Buat script dengan `nano [nama script].py` untuk membaca hasil file log `.txt` yang berisikan data HID berbentuk hex.
 <img width="1108" height="480" alt="image" src="https://github.com/user-attachments/assets/3227401e-158c-4129-9b8d-095d62096f8e" />
-> awokdecode.py
+> [awokdecode.py](https://github.com/zeeyclore/Jarkom-Modul-1-2025-K54/blob/main/awokdecode.py)
 
 Jalankan `python3 [nama script].py` dan hasil sudah muncul di output langsung.
 <img width="926" height="200" alt="image" src="https://github.com/user-attachments/assets/2aca6e00-4755-48f3-9691-d393dcd94af0" />
