@@ -13,15 +13,77 @@ Untuk nomor 1 kurang lebih sama seperti yang ada pada modul GNS3, yaitu menambah
 - 4 Ainur/Client (Melkor, Manwe, Varda, Ulmo)
 
 ## Soal 2
-![Gambar2](images/img_2.png)
 Agar Eru bisa mengakses internet, kita tambahkan:
 ```
 auto eth0
 iface eth0 inet dhcp
 ```
+![Gambar2](images/img_2.png)
 pada network config nya.
+
 ![Gambar2](images/img_2_1.png)
 Bisa dilihat Eru sudah bisa melakukan ping ke google.
+
+# Soal 3
+Agar client dapat terhubung satu sama lain, kita ubah network config pada Eru terlebih dahulu:
+```
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+	address 192.238.1.1
+	netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+	address [Prefix IP].2.1
+	netmask 255.255.255.0
+```
+Lalu untuk masing masing client, kita tambahkan juga kedalam network confignya:
+- Melkor
+```
+auto eth0
+iface eth0 inet static
+	address 192.238.1.2
+	netmask 255.255.255.0
+	gateway 192.238.1.1
+```
+- Manwe
+```
+auto eth0
+iface eth0 inet static
+	address 192.238.1.3
+	netmask 255.255.255.0
+	gateway 192.238.1.1
+```
+- Varda
+```
+auto eth0
+iface eth0 inet static
+	address 192.238.2.2
+	netmask 255.255.255.0
+	gateway 192.238.2.1
+```
+- Ulmo
+```
+auto eth0
+iface eth0 inet static
+	address 192.238.2.3
+	netmask 255.255.255.0
+	gateway 192.238.2.1
+```
+
+Sekarang, seharusnya client sudah dapat terhubung satu sama lain, bisa kita lihat beberapa contoh dibawah ini:
+
+![Gambar3](images/img_3_1.png)
+Bisa dilihat disitu Melkor sudah bisa tersambung ke Ulmo.
+
+![Gambar2](images/img_3_2.png)
+Varda juga sudah dapat terhubung ke Manwe.
+
+![Gambar2](images/img_3_3.png)
+Ulmo dan Manwe juga sudah bisa.
 
 ## Soal 14
 ```
