@@ -30,7 +30,7 @@ Masukkan `http contains "success"` pada kolom filter.
 <img width="990" height="197" alt="image" src="https://github.com/user-attachments/assets/206c5bcb-0f1c-4f63-b532-d3bb6e1d0eb2" />
 
 Lalu klik kanan packet untuk `Follow HTTP Stream`.
-<img width="687" height="123" alt="image" src="https://github.com/user-attachments/assets/90dd813b-f262-474b-94d1-e8ed96d4fc46" />\
+<img width="687" height="123" alt="image" src="https://github.com/user-attachments/assets/90dd813b-f262-474b-94d1-e8ed96d4fc46" />
 
 #### Q3: In which stream were the credentials found? (Format: int)
 ```
