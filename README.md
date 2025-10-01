@@ -7,6 +7,21 @@
 
 ## Soal 1
 ![Gambar1](images/img_1.png)
+Untuk nomor 1 kurang lebih sama seperti yang ada pada modul GNS3, yaitu menambah/memasukkan:
+- Eru: router(ervn-debi)
+- 2 Switch/Gateway
+- 4 Ainur/Client (Melkor, Manwe, Varda, Ulmo)
+
+## Soal 2
+![Gambar2](images/img_2.png)
+Agar Eru bisa mengakses internet, kita tambahkan:
+```
+auto eth0
+iface eth0 inet dhcp
+```
+pada network config nya.
+![Gambar2](images/img_2_2.png)
+Bisa dilihat Eru sudah bisa melakukan ping ke google.
 
 ## Soal 14
 ```
