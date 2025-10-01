@@ -22,7 +22,6 @@ Buka Wireshark dan buka `shortbf.pcapng`, maka akan terlihat jumlah paket di kan
 ```
 Masukkan `http contains "success"` pada kolom filter.
 <img width="990" height="197" alt="image" src="https://github.com/user-attachments/assets/206c5bcb-0f1c-4f63-b532-d3bb6e1d0eb2" />
-
 Lalu klik kanan packet untuk `Follow HTTP Stream`.
 <img width="549" height="159" alt="image" src="https://github.com/user-attachments/assets/076d3bbb-2b7f-4907-8f9e-2571b2b87841" />
 
