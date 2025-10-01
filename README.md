@@ -20,7 +20,7 @@ auto eth0
 iface eth0 inet dhcp
 ```
 pada network config nya.
-![Gambar2](images/img_2_2.png)
+![Gambar2](images/img_2_1.png)
 Bisa dilihat Eru sudah bisa melakukan ping ke google.
 
 ## Soal 14
