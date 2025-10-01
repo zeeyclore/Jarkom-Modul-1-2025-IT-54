@@ -176,6 +176,7 @@ Hasil dapat terlihat dari command di `Q1`.
 ```
 > 749e161661290e8a2d190b1a66469744127bc25bf46e5d0c6f2e835f4b92db18
 ```
+Jalankan `sha256sum knr.exe`.
 <img width="1293" height="162" alt="image" src="https://github.com/user-attachments/assets/d195af41-86dd-42ee-96de-1a47466d80ec" />
 
 ## Soal 18
