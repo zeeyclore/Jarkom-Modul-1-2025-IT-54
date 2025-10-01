@@ -22,6 +22,7 @@ iface eth0 inet dhcp
 pada network config nya.
 
 ![Gambar2](images/img_2_1.png)
+
 Bisa dilihat Eru sudah bisa melakukan ping ke google.
 
 # Soal 3
@@ -77,12 +78,15 @@ iface eth0 inet static
 Sekarang, seharusnya client sudah dapat terhubung satu sama lain, bisa kita lihat beberapa contoh dibawah ini:
 
 ![Gambar3](images/img_3_1.png)
+
 Bisa dilihat disitu Melkor sudah bisa tersambung ke Ulmo.
 
 ![Gambar2](images/img_3_2.png)
+
 Varda juga sudah dapat terhubung ke Manwe.
 
 ![Gambar2](images/img_3_3.png)
+
 Ulmo dan Manwe juga sudah bisa.
 
 ## Soal 14
