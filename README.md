@@ -77,17 +77,45 @@ iface eth0 inet static
 
 Sekarang, seharusnya client sudah dapat terhubung satu sama lain, bisa kita lihat beberapa contoh dibawah ini:
 
-![Gambar3](images/img_3_1.png)
+![Gambar31](images/img_3_1.png)
 
-Bisa dilihat disitu Melkor sudah bisa tersambung ke Ulmo.
+Bisa dilihat Melkor sudah bisa tersambung ke Ulmo.
 
-![Gambar2](images/img_3_2.png)
+![Gambar32](images/img_3_2.png)
 
 Varda juga sudah dapat terhubung ke Manwe.
 
-![Gambar2](images/img_3_3.png)
+![Gambar33](images/img_3_3.png)
 
 Ulmo dan Manwe juga sudah bisa.
+
+## Soal 4
+Agar setiap client dapat tersambung ke internet, lakukan:
+
+![Gambar41](images/img_4_1.png)
+
+```
+cat /etc/resolv.conf
+```
+
+untuk melihat isi file konfigurasi DNS resolver di Eru.
+
+Lalu gunakan:
+```
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+
+pada setiap client, untuk mengarahkan semua permintaan DNS ke DNS NAT-nya GNS3
+
+setelah itu gunakan:
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.238.0.0/16
+```
+
+Sekarang setiap client sudah dapat tersambung ke internet
+
+![Gambar42](images/img_4_2.png)
+
 
 ## Soal 14
 ```
