@@ -105,6 +105,9 @@ Lalu gunakan:
 echo nameserver 192.168.122.1 > /etc/resolv.conf
 ```
 
+![Gambar45](images/img_4_5.png)
+
+
 pada setiap client, untuk mengarahkan semua permintaan DNS ke DNS NAT-nya GNS3
 
 setelah itu gunakan:
@@ -112,10 +115,31 @@ setelah itu gunakan:
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.238.0.0/16
 ```
 
-Sekarang setiap client sudah dapat tersambung ke internet
+Sekarang setiap client sudah dapat tersambung ke internet, bisa dilihat sebagai contoh disini Melkor, Ulmo, dan Manwe:
 
 ![Gambar42](images/img_4_2.png)
 
+![Gambar42](images/img_4_4.png)
+
+
+## Soal 5
+Agar konfigurasinya tidak hilang, kita tambahkan:
+```
+apt install iptables
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.238.0.0/16
+```
+
+Pada `/root/.bashrc` milik Eru
+
+dan
+
+```
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+
+Pada `/root/.bashrc` milik masing masing client
+
+## Soal 6
 
 ## Soal 14
 ```
