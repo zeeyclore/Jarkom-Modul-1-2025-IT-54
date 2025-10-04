@@ -148,6 +148,8 @@ apt update && apt install unzip
 wget --no-check-certificate "https://drive.usercontent.google.com/u/0/uc?id=1bE3kF1Nclw0VyKq4bL2VtOOt53IC7lG5&export=download" -O lalulintas.zip
 ```
 
+![Gambar64](images/img_6_4.png)
+
 Lalu kita lakukan unzip dan tambahkan hak eksekusi ke file traffic.sh
 ```
 unzip lalulintas.zip
@@ -155,10 +157,15 @@ chmod +x traffic.sh
 ./traffic.sh
 ```
 
+![Gambar64](images/img_6_5.png)
+
 Sebelum jalankan file `traffic.sh`, lakukan capturing menggunakan `wireshark` pada koneksi antara Manwe dan Switch 1.
 
-![Gambar62](images/img_6_2.png)
+![Gambar61](images/img_6_3.png)
 
+Lalu bisa dijalankan dan gunakan display filter untuk melihat semua paket yang berasal dari atau menuju ke IP Address Manwe.
+
+![Gambar62](images/img_6_2.png)
 
 
 
