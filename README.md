@@ -142,6 +142,25 @@ Pada `/root/.bashrc` milik masing masing client
 ![Gambar51](images/img_5_1.png)
 
 ## Soal 6
+Download terlebih dahulu file `traffic.zip` pada client Manwe dengan cara:
+```
+apt update && apt install unzip
+wget --no-check-certificate "https://drive.usercontent.google.com/u/0/uc?id=1bE3kF1Nclw0VyKq4bL2VtOOt53IC7lG5&export=download" -O lalulintas.zip
+```
+
+Lalu kita lakukan unzip dan tambahkan hak eksekusi ke file traffic.sh
+```
+unzip lalulintas.zip
+chmod +x traffic.sh
+./traffic.sh
+```
+
+Sebelum jalankan file `traffic.sh`, lakukan capturing menggunakan `wireshark` pada koneksi antara Manwe dan Switch 1.
+
+![Gambar62](images/img_6_2.png)
+
+
+
 
 ## Soal 14
 ```
