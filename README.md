@@ -139,6 +139,8 @@ echo nameserver 192.168.122.1 > /etc/resolv.conf
 
 Pada `/root/.bashrc` milik masing masing client
 
+![Gambar51](images/img_5_1.png)
+
 ## Soal 6
 
 ## Soal 14
